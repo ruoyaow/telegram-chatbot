@@ -1,0 +1,397 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "sweet",
+        "synonyms": [
+          "sugar",
+          "more sugar"
+        ]
+      },
+      {
+        "value": "spycy",
+        "synonyms": [
+          "hot"
+        ]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "bye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "byebye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "bill",
+        "intent": "pay"
+      },
+      {
+        "text": "show me the bill",
+        "intent": "pay"
+      },
+      {
+        "text": "pay",
+        "intent": "pay"
+      },
+      {
+        "text": "i will pay for it",
+        "intent": "pay"
+      },
+      {
+        "text": "eat",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "food",
+            "entity": "type"
+          }
+        ]
+      },
+      {
+        "text": "drink",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "drinks",
+            "entity": "type"
+          }
+        ]
+      },
+      {
+        "text": "drinks",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "drinks",
+            "entity": "type"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking for high energy food",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "food",
+            "entity": "type"
+          },
+          {
+            "start": 16,
+            "end": 27,
+            "value": "high",
+            "entity": "energy"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking for health food",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 23,
+            "end": 27,
+            "value": "food",
+            "entity": "type"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "value": "low",
+            "entity": "energy"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "value": "low",
+            "entity": "fat"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking for sweet food",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "1",
+            "entity": "sweet"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "value": "food",
+            "entity": "type"
+          }
+        ]
+      },
+      {
+        "text": "i want some drinks",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "drinks",
+            "entity": "type"
+          }
+        ]
+      },
+      {
+        "text": "i want some sweet drinks",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "1",
+            "entity": "sweet"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "value": "drinks",
+            "entity": "type"
+          }
+        ]
+      },
+      {
+        "text": "i want some drinks with sugar",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "1",
+            "entity": "sweet"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "value": "drinks",
+            "entity": "type"
+          }
+        ]
+      },
+      {
+        "text": "i want to buy a cup of coffee",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "coffee",
+            "entity": "namelike"
+          }
+        ]
+      },
+      {
+        "text": "i want to buy cheap food",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "low",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "i want to buy sumptuous food",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 14,
+            "end": 23,
+            "value": "high",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "may i order some spicy food",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "1",
+            "entity": "spicy"
+          }
+        ]
+      },
+      {
+        "text": "may i order some low fat food",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "low",
+            "entity": "fat"
+          }
+        ]
+      },
+      {
+        "text": "i need fitness food",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "high",
+            "entity": "protein"
+          }
+        ]
+      },
+      {
+        "text": "more expensive",
+        "intent": "change",
+        "entities": [
+          {
+            "start": 5,
+            "end": 14,
+            "value": "high",
+            "entity": "change_price"
+          }
+        ]
+      },
+      {
+        "text": "give me expensive one, please",
+        "intent": "change",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "high",
+            "entity": "change_price"
+          }
+        ]
+      },
+      {
+        "text": "more cheaper",
+        "intent": "change",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "low",
+            "entity": "change_price"
+          }
+        ]
+      },
+      {
+        "text": "please give me cheaper drinks",
+        "intent": "change",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "low",
+            "entity": "change_price"
+          }
+        ]
+      },
+      {
+        "text": "cheaper please",
+        "intent": "change",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "low",
+            "entity": "change_price"
+          }
+        ]
+      },
+      {
+        "text": "i need tasty food",
+        "intent": "find_food",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "high",
+            "entity": "carbon"
+          }
+        ]
+      },
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      }
+    ]
+  }
+}
