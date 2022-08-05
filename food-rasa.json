@@ -19,7 +19,7 @@
         ]
       },
       {
-        "value": "spycy",
+        "value": "spicy",
         "synonyms": [
           "hot"
         ]
@@ -109,24 +109,24 @@
         ]
       },
       {
-        "text": "i'm looking for health food",
+        "text": "i'm looking for healthy food",
         "intent": "find_food",
         "entities": [
           {
-            "start": 23,
-            "end": 27,
+            "start": 24,
+            "end": 28,
             "value": "food",
             "entity": "type"
           },
           {
             "start": 16,
-            "end": 22,
+            "end": 23,
             "value": "low",
             "entity": "energy"
           },
           {
             "start": 16,
-            "end": 22,
+            "end": 23,
             "value": "low",
             "entity": "fat"
           }
