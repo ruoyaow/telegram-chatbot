@@ -8,4 +8,4 @@ pip install spacy
 pip install sklearn_crfsuite
 python -m spacy download en_core_web_sm
 ```
-demo video see directory:demo
+For demo video plz see directory: demo
